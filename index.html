@@ -294,8 +294,11 @@
   setInterval(displayRandomText, 45000);
 
   function playAudio() {
-    Android.playAudioFromWebView("https://stream.zeno.fm/jmjcspojcxyuv?adtonosListenerId=01HC08XQSCZJS6ZRYX9G204JZY");
+    Android.playAudioFromWebView();
   }
+  function stopAudio() {
+            Android.stopAudio();
+        }    
 </script>
 
 </body>

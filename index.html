@@ -298,7 +298,16 @@
   }
   function stopAudio() {
         Android.stopAudioFromWebView();
-        }    
+        }   
+      
+  document.querySelector('audioPlayer').addEventListener('play', function() {
+    Android.onAudioStart();
+});
+
+document.querySelector('audioPlayer').addEventListener('pause', function() {
+    Android.onAudioStop();
+});
+    
 </script>
 
 </body>
